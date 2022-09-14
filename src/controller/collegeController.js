@@ -1,7 +1,7 @@
 const collegeModel= require("../model/collegeModel")
 
 
-
+//---------creat college--------------------------------------
 const college= async function(req,res){
     try {
     
