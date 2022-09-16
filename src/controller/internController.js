@@ -57,11 +57,20 @@ const createIntern = async function (req, res) {
     const internoutputs = {
       isDeleted:intern.isDeleted,
       Name:intern.name,
+    let interns= {
+      isDeleted:intern.isDeleted,
+      name:intern.name,
+
       email:intern.email,
       mobile:intern.mobile,
       collegeId:intern.collegeId
     }
-    return res.status(201).send({ status: true, data: internoutputs });
+
+    return res.status(201).send({ status: true, data: internoutputs });cd
+
+
+    return res.status(201).send({ status: true, data: interns });
+
 
   } catch (err) {
     return res.status(500).send({ status: false, message: err.message });
