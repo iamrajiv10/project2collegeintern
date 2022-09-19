@@ -57,6 +57,7 @@ const createIntern = async function (req, res) {
     const internoutputs = {
       isDeleted:intern.isDeleted,
       Name:intern.name,
+    }
     let interns= {
       isDeleted:intern.isDeleted,
       name:intern.name,
@@ -66,7 +67,7 @@ const createIntern = async function (req, res) {
       collegeId:intern.collegeId
     }
 
-    return res.status(201).send({ status: true, data: internoutputs });cd
+    return res.status(201).send({ status: true, data: internoutputs });
 
 
     return res.status(201).send({ status: true, data: interns });
